@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #6420AA;
+  font-size: 1.8rem;
+  color: #FF3EA5;
+}
+
+.form {
+  position: relative;
+  border: 3px solid #FFB5DA;
+  padding: 1rem;
+  text-align: center;
+}
+
+.form h2 {
+  color: #6420AA;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.form p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: #FF3EA5;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0 40px;
+}
+
+.rating li,
+.num-display {
+  position: relative;
+  background: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 19px;
+  border: 1px #eee solid;
+  transition: 0.3s;
+}
+
+.rating li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.rating li:hover,
+.num-display {
+  background: #FF3EA5;
+  color: #fff;
+}
+
+[type='radio'] {
+  opacity: 0;
+}
+
+[type='radio']:checked ~ label {
+  background: #6420AA;
+  color: #fff;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  border: 1px solid #FFB5DA;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.no-feedback {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #FF7ED4;
+}
+
+.state {
+  margin: 1rem 0;
+  padding: 1rem 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #FFB5DA;
+}
+
+.state h4 {
+  font-size: 1.3rem;
+  color: #6420AA;
+  font-weight: 600;
+}
+
+.card {
+  position: relative;
+  border: 3px solid #FFB5DA;
+  margin: 2rem 0;
+  padding: 3rem 1rem;
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  color: #6420AA;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card .rate {
+  position: absolute;
+  top:-12px;
+  left: -12px;
+  border: 1px solid #6420AA;
+  background-color: #6420AA;
+  color: #fff;
+  border-style: none solid solid none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: .6rem;
+  font-size: 1.2rem;
+}
+
+.card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card .icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #FF3EA5;
+}
+
+.btn {
+  border: 0;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  background-color: #FF3EA5;
+  text-transform: capitalize;
+}
+
+.btn-primary {
+  background-color: #202142;
+}
+
+.btn-secondary {
+  background: #ff6a95;
+}
+
+.btn:disabled {
+  background-color: #cccccc;
+  color: #000;
+  cursor: auto;
+}
